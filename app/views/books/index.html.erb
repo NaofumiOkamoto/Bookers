@@ -1,14 +1,9 @@
-
-<% if flash[:notice] %>
-  <p><%= flash[:notice] %></p>
-<% end %>
-
 <header>
   <h1 class="header_title">Books</h1>
 </header>
 
 <body>
-<main>
+  <div class="main">
   <table>
     <th>Title</th>
     <th>Body</th>
@@ -25,16 +20,24 @@
 
   <h2>New book</h2>
 
+  <div class="new_book">
   <%= form_for(@book) do |f| %>
 
-    <h4>Title</h4>
-    <%= f.text_field :title %>
+    <div class="new_book_title">
+      <h6>Title</h6>
+      <%= f.text_field :title %>
+    </div>
 
-    <h4>Body</h4>
-    <%= f.text_area :body %>
-    <p><%= f.submit'Create Book' %></p>
+    <div class="new_book_body">
+      <h6>Body</h6>
+      <%= f.text_area :body %>
+    </div>
+    <div class="new_book_submit">
+      <%= f.submit'Create Book' %>
+    </div>
 
   <% end %>
+  </div>
 
-</main>
+  </div>
 </body>

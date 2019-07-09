@@ -1,15 +1,15 @@
-<main>
+<body>
+  <div class="main">
+    <div class="show_title_container">
+      <p class="show_title">Title: <%= @book.title %></p>
+    </div>
 
-<div class="show_title_container">
-  <p class="show_title">Title: <%= @book.title %></p>
-</div>
+    <div class="show_body_container">
+      <p class="show_body">Body: <%= @book.body %></p>
+    </div>
 
-<div class="show_body_container">
-  <p class="show_body">Body: <%= @book.body %></p>
-</div>
-
-<div class="show_edit_back">
-  <p><%= link_to 'Edit', edit_book_path %> |<%= link_to 'Back', books_path %></p>
-</div>
-
-</main>
+    <div class="show_edit_back">
+      <%= link_to 'Edit', edit_book_path %> |<%= link_to 'Back', books_path %>
+    </div>
+  </div>
+</body>

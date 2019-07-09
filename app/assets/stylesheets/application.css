@@ -8,6 +8,15 @@ body {
   line-height: 18px;
   color: #333;
 }
+p, td {
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+.notice {
+  color: green;
+}
 th {
   padding-bottom:5px;
 }
@@ -16,6 +25,18 @@ td {
   padding-left: 5px;
   padding-right: 5px;
 }
-h4 {
-  margin-bottom: 0px;
+h6 {
+  margin: 0px;
+}
+.new_book {
+  margin: 0;
+}
+.new_book_title {
+  margin-bottom: 10px;
+}
+.new_book_body {
+  margin-bottom: 10px;
+}
+.new_book_submit {
+  margin-bottom: 10px;
 }
